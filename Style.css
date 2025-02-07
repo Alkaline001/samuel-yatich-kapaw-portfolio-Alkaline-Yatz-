@@ -297,4 +297,21 @@ form .Btn2{
 
 
 }
+ /* Example responsive styles */
+ @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .header-text h1 {
+        font-size: 1.5rem;
+    }
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Circle Images */
+img {
+    border-radius: 50%;
+}
    

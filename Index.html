@@ -3,182 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio website</title>
+    <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="Style.css">
     <script src="https://kit.fontawesome.com/61107a0cf8.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
+    <div id="header" style="height: 100px; display: flex; align-items: center; justify-content: space-between; padding: 0 5px;">
+        <div class="container" style="display: flex; align-items: center; width: 100%;">
+            <nav style="display: flex; align-items: center; width: 100%; justify-content: space-between;">
+                <img src="LOGO.png" alt="Logo of my personal brand" id="logo" style="max-height: 80px; margin-right: 5px;">
+                <ul style="display: flex; gap: 20px; list-style: none; padding: 0; margin: 0; margin-left: 5px;">
+                    <li><a href="#header" style="text-decoration: none; font-size: 16px; line-height: 100px; transition: all 0.3s ease; position: relative;" onmouseover="this.style.color='#ff5733'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='black'; this.style.transform='scale(1)';">Home</a></li>
+                    <li><a href="#About" style="text-decoration: none; font-size: 16px; line-height: 100px; transition: all 0.3s ease; position: relative;" onmouseover="this.style.color='#ff5733'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='black'; this.style.transform='scale(1)';">About</a></li>
+                    <li><a href="#services" style="text-decoration: none; font-size: 16px; line-height: 100px; transition: all 0.3s ease; position: relative;" onmouseover="this.style.color='#ff5733'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='black'; this.style.transform='scale(1)';">Services</a></li>
+                    <li><a href="#portfolio" style="text-decoration: none; font-size: 16px; line-height: 100px; transition: all 0.3s ease; position: relative;" onmouseover="this.style.color='#ff5733'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='black'; this.style.transform='scale(1)';">Projects</a></li>
+                    <li><a href="#contact" style="text-decoration: none; font-size: 16px; line-height: 100px; transition: all 0.3s ease; position: relative;" onmouseover="this.style.color='#ff5733'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='black'; this.style.transform='scale(1)';">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
     
-    <div id="header">
+    <style>
+        nav ul li a::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background:none;
+            transition: width 0.3s ease;
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+        }
+    
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+    </style>
+    
+        <div class="header-text">
+            <h1>Hi, I'm <strong style="font-family: fantasy; color: rgb(239, 85, 8);">Alkaline Yatz</strong><br><br><br> <br><br>A Junior Software Developer</h1>
+            <img src="software-developer-6521720.jpg" alt="An illustration representing software development" style="height: 300px; width: 600px;">
+        </div>
+    </div>
+
+    <div id="About">
         <div class="container">
-            <nav>
-
-            <img src="LOGO.png" alt="My logo" id="logo" >
-            <ul>
-       <li> <a href="#header">Home</a></li>
-    
-       <li> <a href="#About">About</a></li>
-    
-        
-    
-            <li><a href="#services">Services</a></li>
-    
-
-                <li><a href="#portfolio">projects</a></li>
-
-                    <li><a href="#contact" >Contact</a></li>
-</ul>
-</nav>
-
-
-    </div>
-    <div class="header-text">
-        
-        <h1 style="margin-left: 15px;"> Hi, I'm <strong style="font-family: fantasy; color: rgb(68, 71, 71);">Alkaline Yatz</strong> <br><br><br>A Full-Stack software developer</h1>
-        <img src="software-developer-6521720.jpg" alt="Niko site" 
-        style="height: 200px; width: 400px; margin-left: 10px;">
-    
-    </div>
-</div>
-
-<div id="About">
-    <div class="conntainer">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="man-4568761.jpg" alt="My picture">
-            </div>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="man-4568761.jpg" alt="A portrait of Alkaline Yatz">
+                </div>
                 <div class="about-col-2">
-                    <h1 style="margin-bottom: 20px;" >About Me</h1>
-                    <P>I'm a Junior Full-Stack software developer with a passion for building clean, efficient and user-focused 
-                        code. With a strong foundation in CSS, HTML, JavaScript and Dart, i love tackling  complex problems
-                        and finding innovative solutions, whether it's debugging tricky issues or optimizing performance.
-                        I'm constantly learning and contributing to open-source projects in my free time. Currently am seeking opportunity 
-                        where i can grow my skills and make impact. Feel free to connect with me or checkout my Github portfolio.
-                    </P>
+                    <h1>About Me</h1>
+                    <p>I'm a Junior Software Developer with a passion for building clean, efficient, and user-focused code. With a strong foundation in CSS, HTML, JavaScript, and Dart, I love tackling complex problems and finding innovative solutions. I'm constantly learning and contributing to open-source projects in my free time. Currently, I am seeking opportunities where I can grow my skills and make an impact. Feel free to connect with me or check out my GitHub portfolio.</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-links" onclick="opentab('Skills')">skills</p>
+                        <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('Education')" >Education</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
                     </div>
                     <div class="tab-content active-tab" id="Skills">
                         <ul>
-
-                            <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
                             <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>App Delelopment</span><br>Building Android/ios Apps</li>
+                            <li><span>App Development</span><br>Building Android/iOS Apps</li>
                         </ul>
                     </div>
                     <div class="tab-content" id="Experience">
                         <ul>
-
-                            <li><span>2023-(OCT-DEC)</span><br>Coding bootcamp </li>
-                            <li><span>2023-(JAN-AUG)</span><br>Web App Development Trainee at Adept College of Technolgy</li>
+                            <li><span>2023 (Oct-Dec)</span><br>Coding Bootcamp</li>
+                            <li><span>2023 (Jan-Aug)</span><br>Web App Development Trainee at Adept College of Technology</li>
                             <li><span>2022-2023</span><br>Internship at SAMA Resource</li>
                         </ul>
                     </div>
                     <div class="tab-content" id="Education">
                         <ul>
-
-                            <li><span>2024</span><br>PLP ACADEMY AFRICA </li>
-                            <li><span>2023</span><br>Web App Development Trainee at Adept College of Technolgy</li>
-                            <li><span>2022-2023</span><br>B.Tech Renewable Energy TUM</li>
+                            <li><span>2024</span><br>PLP Academy Africa</li>
+                            <li><span>2023</span><br>Web App Development Trainee at Adept College of Technology</li>
+                            <li><span>2022-2023</span><br>B.Tech Renewable Energy, TUM</li>
                         </ul>
                     </div>
-
                 </div>
-
-                
-            
-        </div>
-    </div>
-
-</div>
-<!--Services-->
-<div id="services">
-    <div class="container">
-        <h1>My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>I'M a passionate Web designer who have designed several
-                     websites both commercial and personal websites.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-light fa-crop"></i>
-                <h2>UI?UX Design</h2>
-                <p>I design user friendly websites and web applications.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>App Design</h2>
-                <p>I'M a passionate App designer.Having a year of exprerience,
-                     I have been able to create a number of user friendly applications.</p>
-                <a href="#">Learn more</a>
             </div>
         </div>
     </div>
-</div>
 
-<div id="portfolio">
-    <div class="container">
-        <h1>My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="" alt="">
-                <h1 style="margin-bottom: 15px;">Personal Portfolio Website</h1>
-        <p>A personal website to showcase my skills, projects, and contact information.</p>
-        <a href="https://alkaline-yatz-portfolio.vercel.app/">View Project</a>
-              <img src="" alt="">  
-            </div>
-            <div class="work">
-                <h1 style="margin-bottom: 15px;">E-Commerce Website</h1>
-                <p>An e-commerce site built with CSS, Html5, Javascript and Node.js, featuring user authentication and product management.</p>
-                <a href="https://e-commerce-five-gilt-18.vercel.app/">View Project</a>
-                <img src="" alt="">  
-              </div>
-              <div class="work">
-                <h1 style="margin-bottom: 15px; ;">To-Do List App</h1>
-                <p>A simple task manager built using JavaScript and local storage for keeping track of to-do items.</p>
-                <a href="https://to-do-list-app-drab-two.vercel.app/">View Project</a>
-                <img src="" alt="">  
-              </div>
-        </div>
-        <a href="#"class="Btn">See More</a>
-    </div>
-</div>
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-               <h1 class="sub-title">Contact Me</h1> 
-                <p><i class="fa-regular fa-envelope"></i>limaajnr@gmail.com</p>
-                <p><i class="fa-sharp fa-solid fa-phone-volume"></i>+254700480098</p>
-                <div class="social-icon">
-                    <a href="https://wa.link/y8zz6m" style="color: green;"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="" style="color: blue;"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://x.com/YatzaaAlkaline?t=0_3ktpLrkt6F3s6R5g&s=08" style="color: rgb(4, 4, 70);"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="" style="color: rgb(55, 54, 54);"><i class="fa-brands fa-github"></i></a>
-
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1>My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I'm a passionate Web Designer who has created several commercial and personal websites.</p>
+                    <a href="#">Learn more</a>
                 </div>
-                <a href="" class="Btn2">Download CV</a>
-
-            </div>
-            <div class="contact-right">
-                <form action="">
-                    <input type="Name" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message" id=""></textarea>
-                    <button type="submit" class="Btn2">Submit</button>
-                </form>
-
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I design user-friendly websites and web applications.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>With a year of experience, I've created a number of user-friendly applications.</p>
+                    <a href="#">Learn more</a>
+                </div>
             </div>
         </div>
     </div>
-    <p class="copyright">&copy; 2024 Alkaline Yatz. All rights reserved.</p>
-</div>
 
-</body>
-</html>
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1>My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="portfolio-project-thumbnail.jpg" alt="Portfolio Website Thumbnail">
+                    <h1>Personal Portfolio Website</h1>
+                    <p>A personal website to showcase my skills, projects, and contact information.</p>
+                    <a href="https://alkaline-yatz-portfolio.vercel.app/">View Project</a>
+                </div>
+                <div class="work">
+                    <img src="ecommerce-project-thumbnail.jpg" alt="E-Commerce Website Thumbnail">
+                    <h1>E-Commerce Website</h1>
+                    <p>An e-commerce site featuring user authentication and product management, built with CSS, HTML5, JavaScript, and Node.js.</p>
+                    <a href="https://e-commerce-five-gilt-18.vercel.app/">View Project</a>
+                </div>
+                <div class="work">
+                    <img src="todo-app-thumbnail.jpg" alt="To-Do List App Thumbnail">
+                    <h1>To-Do List App</h1>
+                    <p>A simple task manager built using JavaScript and local storage for keeping track of tasks.</p>
+                    <a href="https://to-do-list-app-drab-two.vercel.app/">View Project</a>
+                </div>
+            </div>
+            <a href="#" class="Btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> limaajnr@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +254700480098</p>
+                    <div class="social-icon">
+                        <a href="https://wa.link/y8zz6m" style="color: green;"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/example" style="color: blue;"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/YatzaaAlkaline" style="color: rgb(4, 4, 70);"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://github.com/example" style="color: rgb(55, 54, 54);"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="resume.pdf" class="Btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="Name" placeholder="Your Name" required>
+
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="Email" placeholder="Your Email" required>
+
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="Message" rows="6" placeholder="Your Message"></textarea>
+
+                        <button type="submit" class="Btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div
+        
