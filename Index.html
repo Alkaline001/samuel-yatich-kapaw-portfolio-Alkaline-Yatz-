@@ -18,7 +18,7 @@
                     <li><a href="#About" style="text-decoration: none; font-size: 16px; line-height: 100px; transition: all 0.3s ease; position: relative;" onmouseover="this.style.color='#ff5733'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='black'; this.style.transform='scale(1)';">About</a></li>
                     <li><a href="#services" style="text-decoration: none; font-size: 16px; line-height: 100px; transition: all 0.3s ease; position: relative;" onmouseover="this.style.color='#ff5733'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='black'; this.style.transform='scale(1)';">Services</a></li>
                     <li><a href="#portfolio" style="text-decoration: none; font-size: 16px; line-height: 100px; transition: all 0.3s ease; position: relative;" onmouseover="this.style.color='#ff5733'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='black'; this.style.transform='scale(1)';">Projects</a></li>
-                    <li><a href="#contact" style="text-decoration: none; font-size: 16px; line-height: 100px; transition: all 0.3s ease; position: relative;" onmouseover="this.style.color='#ff5733'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='black'; this.style.transform='scale(1)';">Contact</a></li>
+                    <li><a href="contact.html" style="text-decoration: none; font-size: 16px; line-height: 100px; transition: all 0.3s ease; position: relative;" onmouseover="this.style.color='#ff5733'; this.style.transform='scale(1.1)';" onmouseout="this.style.color='black'; this.style.transform='scale(1)';">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -54,39 +54,140 @@
                 <div class="about-col-1">
                     <img src="man-4568761.jpg" alt="A portrait of Alkaline Yatz">
                 </div>
+                <style>
+                    .tab-content {
+                        display: none;
+                        opacity: 0;
+                        transition: opacity 0.3s ease-in-out;
+                        position: absolute;
+                        background: white;
+                        padding: 15px;
+                        border-radius: 8px;
+                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                        width: 300px;
+                        z-index: 10;
+                    }
+                
+                    .tab-titles {
+                        position: relative;
+                        display: inline-block;
+                        margin-right: 20px;
+                        cursor: pointer;
+                        font-weight: bold;
+                    }
+                
+                    .tab-links {
+                        padding: 5px 10px;
+                        border-bottom: 2px solid transparent;
+                        transition: border-bottom 0.3s ease;
+                    }
+                
+                    .tab-links:hover {
+                        border-bottom: 2px solid #007BFF;
+                    }
+                
+                </style>
+                
                 <div class="about-col-2">
-                    <h1>About Me</h1>
+                    <h1 style="color: rgb(7, 7, 7);">About Me</h1><br><br>
                     <p>I'm a Junior Software Developer with a passion for building clean, efficient, and user-focused code. With a strong foundation in CSS, HTML, JavaScript, and Dart, I love tackling complex problems and finding innovative solutions. I'm constantly learning and contributing to open-source projects in my free time. Currently, I am seeking opportunities where I can grow my skills and make an impact. Feel free to connect with me or check out my GitHub portfolio.</p>
+                
                     <div class="tab-titles">
-                        <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" data-tab="Skills" style="color: rgb(90, 37, 4);">Skills</p>
+                        <div class="tab-content" id="Skills">
+                            <ul>
+                                <li><span>TECHNICAL SKILLS</span><br> Programming Languages: <br>
+                                .JavaScript<br>.CSS & HTML<br>.Python<br>.Dart with flutter<br> .Basic understanding
+                            of OOP principles</li>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web/App Development</span><br>.Web App Development <br>.Building Android/iOS Apps</li>
+                                
+                                <li><span>Version Control</span><br>.Familiar with Git and GitHub/GitLab/Bitbucket for source control. <br>
+                                    .Ability to commit, push, pull, merge, and resolve conflicts.</li>
+                                <li><span>Backend Development </span><br>.Understanding of RESTful APIs and basic server-side programming.
+                                    <br>.Familiar with Node.js, Django.
+                                    <br>.Knowledge of databases (SQL & NoSQL, e.g., MySQL,MongoDB).</li>
+                                
+                            </ul>
+                        </div>
                     </div>
-                    <div class="tab-content active-tab" id="Skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>App Development</span><br>Building Android/iOS Apps</li>
-                        </ul>
+                
+                    <div class="tab-titles">
+                        <p class="tab-links" data-tab="Experience" style="color: rgb(90, 37, 4);">Experience</p>
+                        <div class="tab-content" id="Experience">
+                            <ul>
+                                <li><span> The Alkaline Technologies (2024) </span><br> UI/UX designer and Founder of The Alkaline Technologies </li>
+                                <li><span> Adept College of Technology (2023) </span><br>Web App Development Trainer at Adept College of Technology</li>
+                                <li><span>SAMA Resource (2023)</span><br>AI Trainee at SAMA Resource</li>
+                                <li><span> Microsoft (2022) </span><br>Emerging market skills initiative bootcamp on digital freelancing/coding 
+                                    trainer</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="tab-content" id="Experience">
-                        <ul>
-                            <li><span>2023 (Oct-Dec)</span><br>Coding Bootcamp</li>
-                            <li><span>2023 (Jan-Aug)</span><br>Web App Development Trainee at Adept College of Technology</li>
-                            <li><span>2022-2023</span><br>Internship at SAMA Resource</li>
-                        </ul>
-                    </div>
-                    <div class="tab-content" id="Education">
-                        <ul>
-                            <li><span>2024</span><br>PLP Academy Africa</li>
-                            <li><span>2023</span><br>Web App Development Trainee at Adept College of Technology</li>
-                            <li><span>2022-2023</span><br>B.Tech Renewable Energy, TUM</li>
-                        </ul>
+                
+                    <div class="tab-titles" >
+                        <p class="tab-links" data-tab="Education"  style="color: rgb(90, 37, 4);">Education</p>
+                        <div class="tab-content" id="Education">
+                            <ul>
+                                <li><span>2024</span><br>PLP Academy Africa</li>
+                                <li><span>2018-2023</span><br>B.Tech Renewable Energy, TUM</li>
+                                <li><span>2023</span><br>Adept College of Technology</li>
+                                
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+                
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const tabs = document.querySelectorAll(".tab-links");
+                        const tabContents = document.querySelectorAll(".tab-content");
+                
+                        tabs.forEach(tab => {
+                            tab.addEventListener("mouseover", function () {
+                                const targetTab = document.getElementById(this.dataset.tab);
+                
+                                tabContents.forEach(content => {
+                                    content.style.display = "none";
+                                    content.style.opacity = "0";
+                                });
+                
+                                if (targetTab) {
+                                    targetTab.style.display = "block";
+                                    setTimeout(() => {
+                                        targetTab.style.opacity = "1";
+                                    }, 50);
+                                }
+                            });
+                
+                            tab.addEventListener("mouseleave", function () {
+                                setTimeout(() => {
+                                    const targetTab = document.getElementById(this.dataset.tab);
+                                    if (targetTab) {
+                                        targetTab.style.opacity = "0";
+                                        setTimeout(() => {
+                                            targetTab.style.display = "none";
+                                        }, 300);
+                                    }
+                                }, 500); // Delay before hiding to allow smooth transition
+                            });
+                        });
+                
+                        tabContents.forEach(content => {
+                            content.addEventListener("mouseenter", function () {
+                                clearTimeout(this.hideTimeout);
+                            });
+                
+                            content.addEventListener("mouseleave", function () {
+                                this.style.opacity = "0";
+                                this.hideTimeout = setTimeout(() => {
+                                    this.style.display = "none";
+                                }, 300);
+                            });
+                        });
+                    });
+                </script>
+                
 
     <!-- Services Section -->
     <div id="services">
@@ -121,43 +222,37 @@
             <h1>My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="portfolio-project-thumbnail.jpg" alt="Portfolio Website Thumbnail">
+                    <img style=" max-width: 100px; 
+  height: auto;" src="DALL·E 2025-02-08 16.39.49 - A modern and stylish thumbnail for a personal portfolio. The background features a sleek gradient (dark blue to purple) with subtle abstract shapes. T.webp" alt="Portfolio Website Thumbnail">
                     <h1>Personal Portfolio Website</h1>
                     <p>A personal website to showcase my skills, projects, and contact information.</p>
                     <a href="https://alkaline-yatz-portfolio.vercel.app/">View Project</a>
                 </div>
                 <div class="work">
-                    <img src="ecommerce-project-thumbnail.jpg" alt="E-Commerce Website Thumbnail">
-                    <h1>E-Commerce Website</h1>
-                    <p>An e-commerce site featuring user authentication and product management, built with CSS, HTML5, JavaScript, and Node.js.</p>
-                    <a href="https://e-commerce-five-gilt-18.vercel.app/">View Project</a>
+                    <img style="max-width: 100px; height: auto;" src="DALL·E 2025-02-08 17.10.28 - A sophisticated and elegant thumbnail for 'Timber and Grace'. The background features a warm, earthy gradient with wooden textures, symbolizing crafts.webp" alt="Timber & Grace Website Thumbnail">
+                    <h1>Timber & Grace</h1>
+                    <p>An online furniture store where people can order their furniture products through the website
+                        and they will be delivered to their doorstep.
+                    </p>
+                    <a href="https://timber-grace.vercel.app/">View Project</a>
                 </div>
                 <div class="work">
-                    <img src="todo-app-thumbnail.jpg" alt="To-Do List App Thumbnail">
-                    <h1>To-Do List App</h1>
-                    <p>A simple task manager built using JavaScript and local storage for keeping track of tasks.</p>
-                    <a href="https://to-do-list-app-drab-two.vercel.app/">View Project</a>
+                    <img style="max-width: 100px; 
+  height: auto;" src="DALL·E 2025-02-08 17.21.37 - A bold and modern thumbnail for 'Pata AO 254'. The background features a dynamic gradient with African-inspired patterns, symbolizing energy and cultu.webp" alt="Pata AO 254 Thumbnail">
+                    <h1>Pata AO 254</h1>
+                    <p>Pata AO 254 is a website that helps people within the major cities in kenya
+                        to find houses for rent easily. It links people to available houses or the nearest house-agency.
+                    </p>
+                    <a href="https://house-agency-website.vercel.app/">View Project</a>
                 </div>
             </div>
-            <a href="#" class="Btn">See More</a>
+            <a href="see more.html" class="Btn">See More</a>
         </div>
     </div>
 
     <!-- Contact Section -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-regular fa-envelope"></i> limaajnr@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> +254700480098</p>
-                    <div class="social-icon">
-                        <a href="https://wa.link/y8zz6m" style="color: green;"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://www.linkedin.com/in/example" style="color: blue;"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://x.com/YatzaaAlkaline" style="color: rgb(4, 4, 70);"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://github.com/example" style="color: rgb(55, 54, 54);"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <a href="resume.pdf" class="Btn2" download>Download CV</a>
+    <a href="contact.html" class="Btn2" contact>Contact Me</a>
+                    <a href="https://www.canva.com/design/DAGc8sRLU4A/y7AMV14ih_NDxlmyWh5Fhw/edit?ui=eyJIIjp7IkEiOnRydWV9fQ" class="Btn2" download>Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form action="">
@@ -174,5 +269,29 @@
                     </form>
                 </div>
             </div>
-        </div
+            <footer style="text-align: center; padding: 10px; background-color: #f1f1f1;">
+                <div class="social-icon">
+                    <a href="https://wa.link/y8zz6m" style="color: green; margin: 0 10px;">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/example" style="color: blue; margin: 0 10px;">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://x.com/YatzaaAlkaline" style="color: rgb(4, 4, 70); margin: 0 10px;">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://github.com/example" style="color: rgb(55, 54, 54); margin: 0 10px;">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <p style="margin-top: 10px; font-size: 14px; color: #333;">
+                    &copy; 2024 Yatz Alkaline. All rights reserved.
+                </p>
+            </footer>
+            
+        </div</body>
+        </html>  
+    
+
+   
         
