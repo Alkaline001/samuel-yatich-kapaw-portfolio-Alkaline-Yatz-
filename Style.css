@@ -314,4 +314,10 @@ form .Btn2{
 img {
     border-radius: 50%;
 }
+/* Extra small screens (low-resolution devices) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+}
    
