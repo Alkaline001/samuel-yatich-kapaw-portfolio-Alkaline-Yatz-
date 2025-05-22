@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", function () {
     // Hamburger menu
     const menuToggle = document.querySelector(".menu-toggle");
@@ -33,3 +34,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+=======
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+>>>>>>> 2e072686dcdd28719c91be995d628e0b22219aaa
