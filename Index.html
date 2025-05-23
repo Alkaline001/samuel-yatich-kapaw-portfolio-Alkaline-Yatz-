@@ -42,6 +42,13 @@
 
         /* Media Query for small devices (max-width: 768px) */
        @media screen and (max-width: 768px) {
+
+        
+         .header-text img {
+        width: 60%;
+        max-width: 60%; /* Full width of container */
+        height: auto;
+    }
     .hamburger {
         display: block;
         margin: 0; /* Ensure no margin offsets the icon */
@@ -59,8 +66,8 @@
             flex-direction: column;
             position: absolute;
             top: 50px; /* Matches hamburger icon position; adjust if needed */
-            left: 0; /* Align to left edge */
-            width: max-content; /* Fit content width */
+            right: 0; /* Align to left edge */
+            width: fit-content; /* Fit content width */
             background-color: rgb(192, 187, 187);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             z-index: 10;
@@ -91,7 +98,10 @@
     }
 
     .tab-titles {
-        display:flex
+        flex-direction: row; /* Explicitly horizontal */
+        justify-content: space-between; /* Distribute tabs evenly */
+        gap: 5px; /* Reduced gap for small screens */
+        width: 100%; /* Full width of container */
     }
 }
     </style>
